@@ -1,0 +1,228 @@
+/* head....................... */
+
+.topmain {
+    background-color:rgb(148, 180, 181);
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.topic {
+    display: flex;
+    justify-content: center;
+    /* font-size: 37px; */
+    padding: 40px;
+    font-weight: bold;
+    color: rgb(253, 252, 254);
+    text-transform: capitalize;
+    text-shadow:  0 2px 3px #797171, 0 0 5px #4e4e5c;
+}
+
+.resumemain {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin-left: 270px;
+    background-color: rgb(254, 254, 254);
+
+}
+
+
+/* body ..........................*/
+
+.resumemain {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.resumeeducation1 {
+    padding: 8px;
+    background-color: rgb(254, 254, 254);
+    /* color: aliceblue; */
+    margin-bottom: 1px;
+
+    box-shadow: 3px 3px 3px 3px  rgb(165, 164, 160);
+    border-radius: 2px;   
+}
+
+.resumeeducation1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.resumeeducation2 {
+    padding: 20px;
+
+    color: rgb(13, 12, 12);
+    border: none;
+}
+
+.resumeeducation2 {
+
+display: grid;
+    grid-template-columns: auto auto auto;
+    height: 160px;
+    padding: 30px;
+    background-color: rgb(254, 254, 254);
+}
+
+.cource1 {
+
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 17px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+
+    text-shadow:  0 0px 1px #797171, 0 0 1px #4e4e5c;
+
+    /* 
+font-weight: bold; 
+padding: 8px;
+text-transform: capitalize; */
+
+}
+
+.cource2 {
+    height: 250px;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+
+    text-shadow:  0 0px 1px #797171, 0 0 1px #4e4e5c;
+
+}
+
+.upper {
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color:rgb(148, 180, 181);
+    color: rgb(253, 252, 254);
+    padding-bottom: 27px;
+    font-weight: bold;
+    padding-top: 24px;
+    text-shadow:  0 2px 3px #797171, 0 0 5px #4e4e5c;
+}
+
+
+/* footer page */
+
+
+
+
+.Ftwo {
+    display: flex;
+    justify-content: space-around;
+    /* background-color:  rgb(251, 249, 246); */
+    color: rgb(7, 30, 51);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 30px;
+font-weight: bolder;
+}
+
+.F1two {
+    display: flex;
+    justify-content: space-around;
+    /* background-color:  rgb(251, 249, 246); */
+    color: rgb(12, 45, 74);
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+
+.span1 {
+   background-color: rgb(231, 230, 232);
+    border: solid rgb(231, 230, 232) 1px;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+/* .smallbox {
+    border: solid 1px blue;
+    width: 6px;
+    height: 6px;
+    background-color: blue;
+    margin-top: 3px;
+    margin-right: 10px;
+} */
+
+.resumeeducation2 .skills {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-weight: bold;
+    padding: 8px;
+    text-transform: capitalize;
+    font-size: px;
+}
+
+
+
+.launguage1 {
+    /* margin-top: 20px;
+    margin-bottom: ; */
+    margin-top: 3px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.upper1 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 0px;
+    text-transform: uppercase;
+
+    padding-bottom: 11px;
+    padding-top: 14px;
+}
+
+.skills1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-weight: bold;
+    padding: 8px;
+    text-transform: capitalize;
+
+}
+
+
+
+
+.foo1:hover{
+    color: rgb(140, 174, 176);
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .foo:hover{
+    color: rgb(140, 174, 176);
+    cursor: pointer;
+  }

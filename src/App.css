@@ -1,0 +1,71 @@
+
+
+/* header................. */
+
+
+.MAINNAVBAR{
+  display: flex;
+  flex-direction:column;
+  top: 0%;
+  width: 100%;
+ position: sticky; 
+ 
+}
+.MAIN1{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+background-color: rgb(254, 254, 254);
+
+list-style: none;
+height: 100px;
+position: sticky;
+top: 0%;
+padding-top: 0px;
+margin-top: 0px;
+z-index: 1;
+}
+
+
+  .active{
+    background-color:cadetblue;
+    color: aliceblue;
+    border-radius: 17px;
+
+    transition: 1s;
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+  }
+
+
+
+  ul li a{
+    color: rgb(1, 5, 8);
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor:default;
+
+  }
+  ul li{
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 40px;
+  }
+  
+.name{
+    font-size: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-self: center;
+    margin-top: 17px;
+}
+
+
+/* app navbar */
+
