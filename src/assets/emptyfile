@@ -1,0 +1,123 @@
+import React, { useEffect, useState } from "react";
+mport './login.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+export default function Login_page() {
+
+    const initialvalue = { username: "", email: "", password: "" }
+    const [formvalues, setformvalues] = useState(initialvalue);
+    const [formerrors, setformerrors] = useState({})
+    const [issubmit, setissubmit] = useState(false)
+
+    const handlechange = (e) => {
+
+        const { name, value } = e.target;
+        setformvalues({ ...formvalues, [name]: value });
+
+    };
+
+    const handlesubmit = (e) => {
+        e.preventDefault();
+        setformerrors(validate(formvalues));
+        setissubmit(true);
+
+    };
+
+    useEffect(() => {
+        console.log(formerrors);
+        if (Object.keys(formerrors).length === 0 && issubmit) {
+            console.log(formvalues)
+        }
+
+
+    }, [formerrors]);
+
+    const validate = (values) => {
+
+        const errors = {};
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        if (!values.username) {
+            errors.username = "user name is required";
+        }
+
+        if (!values.email) {
+            errors.email = "email is required";
+        }
+
+        if (!values.password) {
+            errors.password = "password is required";
+        }
+        return errors;
+    };
+
+    console.log()
+
+
+
+    return (
+        <>
+            <div className="form_top">
+            
+            <div className="container1">
+               <div className="box_one">hi there !</div>
+               <div className="box_two">i'am jayasurya</div>
+               <div className="box_three">front-end developer</div>
+            </div>
+
+            <div className="container2"></div>
+           
+           
+
+                <div className="container">
+                <div className="topic">log-in page</div>
+                    <form onSubmit={handlesubmit}>
+
+                        <div className="field">
+                            
+                            <input type="text" name="username" 
+                            value={formvalues.username } 
+                            onChange={handlechange}
+                            placeholder="User Name" 
+                            />
+                            <div className="underline"></div>
+                            <p>{formerrors.username}</p>
+                        </div>
+                        {/* <FontAwesomeIcon icon={faInstagram} /> */}
+                        <div className="field">
+                           
+                            <input type="email" name="email"
+                             value={formvalues.email}
+                              onChange={handlechange}
+                              placeholder="example@gmail.com" />
+                            <div className="underline"></div>
+                            <p>{formerrors.email}</p>
+                        </div>
+                        <div className="field">
+                            
+                            <input type="password"
+                             name="password" 
+                             value={formvalues.password} 
+                             onChange={handlechange} 
+                             placeholder="password"/>
+                             <div className="underline"></div>
+                            <p>{formerrors.password}</p>
+                        </div>
+                <div className="btn">
+                        <button className="btn_one" >SIGN-UP</button>
+                       
+                        </div>
+                    </form>
+                    {/* <button className="btn_two" onClick={Refresh}>Refresh</button>
+                       */}
+
+
+                </div>
+
+            </div>
+            
+
+        </>
+    )
+
+}

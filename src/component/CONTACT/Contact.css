@@ -133,10 +133,20 @@ border-radius: 20px;
   }
 
 
+::placeholder{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
 
+input{
 
+  outline: none;
+}
 
-
+p{
+  color: #8e3e3e;
+}
 
 
 

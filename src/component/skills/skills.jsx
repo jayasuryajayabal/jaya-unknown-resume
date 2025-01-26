@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Projects.css';
+import './skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHouse, faMailBulk, faMailForward, faMailReply, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
 
-export default function Projects(){
+export default function Skills(){
     return(
         <>
         {/* <h1> projects page <Link to='Aboutpage.jsx'>yo</Link> </h1>
@@ -27,11 +27,11 @@ export default function Projects(){
 
 <div className="skills"><div className="smallbox"></div> HTML</div>
 <div className="skills"><div className="smallbox"></div>CSS</div>
-<div className="skills"><div className="smallbox"></div>JAVASCRIPT</div>
-<div className="skills"><div className="smallbox"></div>REACT.JS</div>
-<div className="skills"><div className="smallbox"></div>WORD & EXCEL</div>
+<div className="skills"><div className="smallbox"></div>Javascript</div>
+<div className="skills"><div className="smallbox"></div>React.js</div>
+<div className="skills"><div className="smallbox"></div>Word & Excel</div>
 
-<div className="skills"><div className="smallbox"></div>GIT HUB</div>
+<div className="skills"><div className="smallbox"></div>Git Hub</div>
 
 
 </div>
@@ -40,10 +40,10 @@ export default function Projects(){
 
 <div className="launguage1"> 
 
-<div className="upper1">launguage <br /></div>
+<div className="upper1">language<br /></div>
 
-<div className="skills1"><div className="smallbox"></div> ENGLISH</div>
-<div className="skills1"><div className="smallbox"></div>TAMIL</div>
+<div className="skills1"><div className="smallbox"></div> English</div>
+<div className="skills1"><div className="smallbox"></div>Tamil</div>
 </div>
 </div>
 
@@ -74,8 +74,8 @@ export default function Projects(){
 
 <div className="F1four">
 
-<div className="pro_foo">63790 - 50259</div>
-  <div className="pro_foo">jayasurya1711@gmail.com</div>
+<div className="pro_foo">63790 - 50259 <FontAwesomeIcon icon={faPhone}/> </div>
+  <div className="pro_foo">jayasurya1711@gmail.com <FontAwesomeIcon icon={faEnvelope}/> </div>
   <div className="foo_icon">
   <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faTwitter} />

@@ -66,7 +66,7 @@ text-shadow:  0 2px 2px #797171, 0 0 2px #4e4e5c;
 .skills1{
     font-weight: bold;
     text-shadow:  0 1px 1px rgb(140, 174, 176), 0 0 5px rgb(140, 174, 176);
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-left: 29px;
 
 }

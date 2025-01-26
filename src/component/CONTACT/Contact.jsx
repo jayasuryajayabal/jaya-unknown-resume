@@ -5,17 +5,24 @@ import { faEnvelope, faHouse, faMailBulk, faMailForward, faMailReply, faPhone } 
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
-const Handlesubmit=()=>{
-        // onsubmit=e.target.value
-        // preventdefault
-        alert("Are You Submit This Form")
-        alert('Sussessfully Submited The Form')
-       
-        }
+// const initialvalue ={firstname:"",
+//   lastname:""
+//   ,email:"",
+// message:"",
+// subject:"",}
+// const [formvalues,setformvalues]=useState(initialvalue);
+// // const[formerrors,setformerrors]=useState({});
+
  
+// const handlechange=(e)=>{
+//   const{name,value}=e.target;
+//   setformvalues({...formvalues,[name]: value});
+// };
+
 
 
 export default function Contact(){
+
     return(
         <>
 <div className="contacthead">
@@ -24,41 +31,61 @@ export default function Contact(){
 
     <div className="contactin">
         
+
+        <form >
     <div className="contactput_one">
         <div className="contactput1">
             <div className="conname">first name</div>
-            <input type="text" placeholder="first name" />
+            <input type="text" 
+            name="name" 
+          //  value={formvalues.username}
+            placeholder="first name" 
+             />
+            
         </div> 
 
-        <div className="contactput1">
+         <div className="contactput1">
         <div className="conname">last name</div>
-        <input type="text" placeholder="last name" />  
-        </div>     
+        <input type="text" name="name"
+         placeholder="last name"
+        //  value={formvalues.lastname}
+         /> 
+        </div>      
         </div>
 
 <div className="contactput_two">
         
 <div className="contactput2">
-        <div className="conname">enter the e-mail</div>
-        <input type="email" placeholder="e-mail" />  
+        <div className="conname">e-mail</div>
+        <input type="email" name="email"
+         placeholder="example@gmail.com"
+        //  value={formvalues.email} 
+        />  
+        
         </div>  
 
         <div className="contactput2">
-        <div className="conname">enter the subject</div>
-        <input type="text" placeholder="subjects" />  
+        <div className="conname">subject</div>
+        <input type="text" placeholder="subjects" 
+        name="subject"
+        // value={formvalues.subject}
+       />  
         </div>  
 
         <div className="contactput2">
-        <div className="conname">enter the message</div>
-        <input type="text" placeholder="type .." />  <br /><br />
+        <div className="conname">message</div>
+        <input type="text" placeholder="type .." 
+        name="message"
+        // value={formvalues.message}
+      />  <br /><br />
 
 
-        <button className="con_btn" onClick={Handlesubmit}>submit</button>
+        <button className="con_btn">submit</button>
        
       
         </div>  
 </div>
-
+</form>
      
 
         
@@ -79,8 +106,8 @@ export default function Contact(){
 
         <div className="F1three">
 
-        <div className="foo">63790 - 50259</div>
-          <div className="foo">jayasurya1711@gmail.com</div>
+        <div className="foo">63790 - 50259 <FontAwesomeIcon icon={faPhone}/></div>
+          <div className="foo">jayasurya1711@gmail.com <FontAwesomeIcon icon={faEnvelope}/></div>
           <div className="foo_icon">
 
           <FontAwesomeIcon icon={faFacebook} />

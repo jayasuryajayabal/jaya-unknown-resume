@@ -1,5 +1,5 @@
 import React from "react";
-import "./Resume.css"
+import "./education.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHouse, faMailBulk, faMailForward, faMailReply, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -7,7 +7,7 @@ import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/f
 
 
 
-export default function RESUME(){
+export default function Education(){
 
     return(
         <>
@@ -18,18 +18,18 @@ export default function RESUME(){
 <div className="topic"> <div className="span1"></div> education</div>
         <div className="resumemain">
 
-        <div className="upper">cource</div>
+        <div className="upper">course</div>
                <div className="resumeeducation1">
 
                
         <div className="cource1">
-            <div className="top1">cource</div>
+            <div className="top1">course</div>
             <div className="top1">institute</div>
             <div className="top1">location</div>
             <div className="top1">work experience</div>
         </div>
         <div className="cource2">
-            <div className="top2">react.js</div>
+            <div className="top2">frontend web developer</div>
             <div className="top2">credo systemz</div>
             <div className="top2">velachery , chennai</div>
             <div className="top2">fresher</div>
@@ -115,8 +115,8 @@ export default function RESUME(){
 
         <div className="F1two">
 
-        <div className="foo">63790 - 50259</div>
-          <div className="foo">jayasurya1711@gmail.com</div>
+        <div className="foo">63790 - 50259 <FontAwesomeIcon icon={faPhone}/> </div>
+          <div className="foo">jayasurya1711@gmail.com <FontAwesomeIcon icon={faEnvelope}/> </div>
           <div className="foo_icon">
 
           <FontAwesomeIcon icon={faFacebook} />

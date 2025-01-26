@@ -74,9 +74,9 @@ display: grid;
 
 .cource1 {
 
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-weight:bold;
-    font-size: 17px;
+    font-size: 21px;
     height: 270px;
     display: flex;
     flex-direction: column;
@@ -95,9 +95,9 @@ text-transform: capitalize; */
 .cource2 {
     height: 250px;
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 21px;
     height: 270px;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@ text-transform: capitalize; */
 
 .upper {
     font-size: 30px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background-color:rgb(148, 180, 181);
     color: rgb(253, 252, 254);
     padding-bottom: 27px;
@@ -172,7 +172,7 @@ font-weight: bolder;
     font-weight: bold;
     padding: 8px;
     text-transform: capitalize;
-    font-size: px;
+   
 }
 
 
